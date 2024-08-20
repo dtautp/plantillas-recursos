@@ -1,0 +1,121 @@
+<style media="screen">
+  .bg-03{background-color:#fff!important}
+  p,a{
+    font-size:16px;
+    line-height: 24px;
+    margin:4px 0;
+  }
+  li{
+    font-size:16px;
+  }
+h1,h2,h3,h4,h5,h6{
+  margin:8px 0;
+}
+
+  hr{
+  margin:16px 0;
+  border-color:#A4C6FF;
+}
+  section{
+    margin-bottom:32px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .col1,.col2,.col3,.col4,.col5,.col6,.col7{
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+  @media only screen and (min-width: 600px) {
+    .col1{grid-template-columns: repeat(1, minmax(0, 1fr));}
+    .col2{grid-template-columns: repeat(2, minmax(0, 1fr));}
+    .col3{grid-template-columns: repeat(3, minmax(0, 1fr));}
+    .col4{grid-template-columns: repeat(4, minmax(0, 1fr));}
+    .col5{grid-template-columns: repeat(5, minmax(0, 1fr));}
+    .col6{grid-template-columns: repeat(6, minmax(0, 1fr));}
+    .col7{grid-template-columns: repeat(7, minmax(0, 1fr));}
+  }
+
+  .button--button:hover{background:rgba(255, 255, 255, 0.5);}
+</style>
+<section>
+  <p>En esta página encontrarás información básica para emplear los diferentes programas o Software para tu curso. Si tienes alguna duda extra, tu docente está para apoyarte. Puedes utilizar el Foro de Consultas para ponerte en contacto.</p>
+  <ol>
+    <li>Software necesario</li>
+    <li>Guías de uso</li>
+    <li>Preguntas Frecuentes</li>
+  </ol>
+</section>
+<hr>
+<section>
+  <h2>1. Software necesario</h2>
+  <p>Este es el software que necesitarás a lo largo de tu curso. Para mayor detalle sobre los momentos en que usarlos, revisa las actividades y tareas a lo largo del curso.</p>
+  <div class="col2">
+  </div>
+  <article class="box" style="background-color:var(--background-03);border:1px solid #DDE1E6;border-radius:8px;padding:16px;display:inline-grid;row-gap:1em;">
+    <h3>Programa 1</h3>
+    <hr style="margin:0;">
+    <p>Version XXXX</p>
+    <hr style="margin:0;">
+    <h4>Requerimientos mínimos</h4>
+    <ul>
+      <li>Sistema Operativo: Windows 10, 64 bits</li>
+      <li>Procesador: 2,5 – 2,9 GHz </li>
+      <li>RAM: Min 8, recomendado 16.</li>
+      <li>Tarjeta gráfica: 1Gb de GPU.</li>
+    </ul>
+    <h4>Licencia</h4>
+    <p>El proveedor ofrece licencias gratuitas para estudiantes de X años de duración. Usa tu correo institucional al crear una cuenta en su página para descargarlo.</p>
+    <button class="button button--md sc-cc-button" href="#" style="background-color:var(--primary);color:var(--neutral-04);margin-bottom:8px;">Ir a página del programa</button>
+    <button class="button button--md sc-cc-button" href="#" style="background-color:var(--neutral-04);color:var(--primary);border:1px solid var(--primary)">Guía de Instalación</button>
+  </article>
+</section>
+<hr>
+<section>
+  <h2>2. Guías de uso</h2>
+  <p>Puedes usar las siguientes guias para conocer los programas que usarás:</p>
+  <article class="" style="margin-bottom:24px;">
+    <h3>Uso del programa 1</h3>
+    <iframe style="height: 50vh;" src="https://www.youtube.com/embed/H-_Kj0k1bSM" width="100%" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" aria-label="Reproductor de Video de Youtube"></iframe>
+    <div class="grid-row grid gap-md col4" style="border: 1px solid #CCCCCC; margin: 0px; padding: 10px 16px;">
+        <div class="" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+          <h3 style="font-size: 16px; line-height: 1.3em; color: #2d3b45;"><strong >Abre el material en otros formatos:</strong></h3>
+        </div>
+        <div class="col-span-3" >
+          <div class="grid-row grid gap-md col3" style="column-gap: 1em; justify-content: left;">
+            <div style="border:1px solid #0661FC; border-radius:2px;text-align:center;padding:10px 32px;background:white;"><a href="#" style="color:#0661FC;text-decoration:none;">Abrir Video</a></div>
+            <div style="border:1px solid #0661FC; border-radius:2px;text-align:center;padding:10px 32px;background:white;"><a href="#" style="color:#0661FC;text-decoration:none;">Abrir Audio</a></div>
+            <div style="border:1px solid #0661FC; border-radius:2px;text-align:center;padding:10px 32px;background:white;"><a href="#" style="color:#0661FC;text-decoration:none;">Abrir PDF</a></div>
+          </div>
+        </div>
+    </div>
+  </article>
+  <article class="" style="margin-bottom:24px;">
+    <h3>Uso del programa 2</h3>
+    <iframe style="height: 50vh;" src="https://www.youtube.com/embed/H-_Kj0k1bSM" width="100%" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" aria-label="Reproductor de Video de Youtube"></iframe>
+    <div class="grid-row grid gap-md col4" style="border: 1px solid #CCCCCC; margin: 0px; padding: 10px 16px;">
+        <div class="" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+          <h3 style="font-size: 16px; line-height: 1.3em; color: #2d3b45;"><strong >Abre el material en otros formatos:</strong></h3>
+        </div>
+        <div class="col-span-3" >
+          <div class="grid-row grid gap-md col3" style="column-gap: 1em; justify-content: left;">
+            <div style="border:1px solid #0661FC; border-radius:2px;text-align:center;padding:10px 32px;background:white;"><a href="#" style="color:#0661FC;text-decoration:none;">Abrir Video</a></div>
+            <div style="border:1px solid #0661FC; border-radius:2px;text-align:center;padding:10px 32px;background:white;"><a href="#" style="color:#0661FC;text-decoration:none;">Abrir Audio</a></div>
+            <div style="border:1px solid #0661FC; border-radius:2px;text-align:center;padding:10px 32px;background:white;"><a href="#" style="color:#0661FC;text-decoration:none;">Abrir PDF</a></div>
+          </div>
+        </div>
+    </div>
+  </article>
+</section>
+<hr>
+<section>
+  <h2>Preguntas frecuentes</h2>
+  <details style="background-color:var(--neutral-04);padding:16px;border-radius:2px;">
+      <summary style="font-size:1.2em;"><strong>¿Cómo sé qué versión de sistema operativo tengo?</strong></summary>
+      <p>Si usas <strong>Windows</strong>, haz clic derecho en el icono “Windows” en la barra de tareas y luego clic en Sistema.Ahí podrás identificar la versión del sistema que posees. Mira este video como ejemplo.</p>
+      <p>Si usas una <strong>Mac</strong>, haz click en el ícono de Manzana en la esquina derecha superior y selecciona “Acerca de esta Mac”. Mira este video como ejemplo.</p>
+  </details>
+  <details style="background-color:var(--background-03);padding:16px;border-radius:2px;">
+      <summary style="font-size:1.2em;"><strong>¿Cómo ejecutar como administrador?</strong></summary>
+      <p>Descarga el ejecutable de tu programa, has clic derecho y luego clic en la opción "Ejecutar como administrador", puedes ver el siguiente video de ejemplo. </p>
+  </details>
+</section>
