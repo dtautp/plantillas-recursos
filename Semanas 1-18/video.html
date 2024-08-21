@@ -1,0 +1,94 @@
+<style media="screen">
+  .bg-03{background-color:#fff!important}
+  p,a{
+    font-size:16px;
+    line-height: 24px;
+    margin:4px 0;
+  }
+  li{
+    font-size:16px;
+  }
+h1,h2,h3,h4,h5,h6{
+  margin:8px 0;
+}
+  hr{
+  margin:16px 0;
+  border-color:var(--primary-30);
+}
+  section{
+    margin-bottom:32px;
+}
+  .boton-descarga{
+    border:1px solid #0661FC;
+    border-radius:4px;
+    text-align:center;
+    padding:10px 32px;
+    background:white;
+    display:inline-flex;
+    justify-content:center;
+    column-gap:1em;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .col1,.col2,.col3,.col4,.col5,.col6,.col7{
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .mobile-only{
+      display:inline-flex;
+      background-color:#007B77;
+      padding:8px;
+      justify-content:center;
+      column-gap:1em;
+      border-radius:4px;
+      color:var(--neutral-04)
+    }
+  }
+  @media only screen and (min-width: 800px) {
+    .col1{grid-template-columns: repeat(1, minmax(0, 1fr));}
+    .col2{grid-template-columns: repeat(2, minmax(0, 1fr));}
+    .col3{grid-template-columns: repeat(3, minmax(0, 1fr));}
+    .col4{grid-template-columns: repeat(4, minmax(0, 1fr));}
+    .col5{grid-template-columns: repeat(5, minmax(0, 1fr));}
+    .col6{grid-template-columns: repeat(6, minmax(0, 1fr));}
+    .col7{grid-template-columns: repeat(7, minmax(0, 1fr));}
+    .mobile-only{
+      display:none;
+    }
+  }
+
+}
+</style>
+<section>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</section>
+<section>
+  <!---No borrar esto--->
+  <aside class="mobile-only">
+    <img src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/5461b013-79ef-4550-a6af-5a7d1529c4c0/alert-circle-white_GSYBSA.png" width="32" height="32" alt="Atención">
+    <p>Si estás en movil, rota la pantalla a horizontal para una mejor experiencia.</p>
+  </aside>
+  <!---No borrar esto--->
+  <iframe style="height: 50vh;" src="https://www.youtube.com/embed/H-_Kj0k1bSM" width="100%" allowfullscreen="allowfullscreen" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" aria-label="Reproductor de Video de Youtube"></iframe>
+  <div class="grid-row grid gap-md col4" style="border: 1px solid #CCCCCC; margin: 0px; padding: 10px 16px;">
+      <div class="" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+        <h3 style="font-size: 16px; line-height: 1.3em; color: #2d3b45;"><strong >Abre el material en otros formatos:</strong></h3>
+      </div>
+      <div class="col-span-3" >
+        <div class="grid-row grid gap-md col3" style="column-gap: 1em; justify-content: left;">
+          <div class="boton-descarga">
+            <img src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/c3f4ed8b-6288-4f0b-87ec-7707f5860a50/film_ABBHVE.png" alt="" style="width:24px;height:24px;align-self:center;">
+            <a href="#" style="color:#0661FC;text-decoration:none;">Abrir Video</a>
+          </div>
+          <div class="boton-descarga">
+            <img src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/bcab9dc3-5aef-4f79-97a0-c60288d93978/music_ZKQWEM.png" alt="" style="width:24px;height:24px;align-self:center;">
+            <a href="#" style="color:#0661FC;text-decoration:none;">Abrir Audio</a>
+          </div>
+          <div class="boton-descarga">
+            <img src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/74624281-3139-4316-81c4-cb693805d9a3/file-text_IMHXIJ.png" alt="" style="width:24px;height:24px;align-self:center;">
+            <a href="#" style="color:#0661FC;text-decoration:none;">Abrir Texto</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
