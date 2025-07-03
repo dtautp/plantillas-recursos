@@ -1,5 +1,5 @@
-<style media="screen">
-  .bg-03{background-color:#fff!important}
+<style>
+    .bg-03{background-color:#fff!important}
   p,a{
     font-size:16px;
     line-height: 24px;
@@ -28,6 +28,41 @@ h1,h2,h3,h4,h5,h6{
     justify-content:center;
     column-gap:1em;
   }
+  .ck-content .table table th,.ck-content .table table td{
+    border:1px solid #DDE1E6;
+  }
+  .ck-content .table table th{
+    background:#DDE1E6;
+  }
+  .ck-content .table table{
+    border:0;
+    text-align:center;
+  }
+  .tg{border-collapse:collapse;border-spacing:0;}
+   td[style*="1px solid black"]{
+    border:1px solid #DDE1E6!important;
+   }
+   td.tg-no[style*="1px solid black"]{border:0!important}
+  .tg .tg-hd{
+    border: 1px solid #DDE1E6;
+    background:#DDE1E6;
+  }
+  .tg .tg-cn{
+    border: 1px solid #DDE1E6;
+    padding:8px;
+    text-align:center;
+    vertical-align: top;
+  }
+
+  .tg .tg-bt{
+    border: 1px solid #DDE1E6;
+    background: #F2F4F8;
+    padding:8px;
+    text-align:center;
+    vertical-align: top;
+    font-weight:700;
+  }
+
   @media only screen and (max-width: 800px) {
     .col1,.col2,.col3,.col4,.col5,.col6,.col7{
       grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -54,8 +89,8 @@ h1,h2,h3,h4,h5,h6{
       display:none;
     }
   }
-}
 </style>
+
 <section>
     <p> <strong>Gracias</strong> por ser parte de quienes queremos generar un cambio a nivel educativo y llegar a que cada uno de nuestros estudiantes en todo el Perú transforme su vida para siempre. A través de este espacio queremos brindarte algunas orientaciones para que puedas llevar a cabo con éxito tu curso virtual de XXXX. Por ello, es importante revisar a profundidad: </p>
     <ol>
@@ -74,7 +109,50 @@ h1,h2,h3,h4,h5,h6{
 <hr>
 <section>
     <h2 id="parte-2"> 2. El sistema de evaluación </h2>
-    <p> <a href="#" class="button button--md sc-cc-button" style="background-color:var(--primary);color:var(--neutral-04);font-size:16px;margin-bottom:8px;" href="#">Abrir consideraciones sobre el sistema de evaluación ➡️</a> </p>
+    <div>
+    <p>El sistema de evaluación de tu curso comprende las siguientes evaluaciones:</p>
+     <table class="tg"><thead>
+      <tr>
+        <th class="tg-hd">Ítem de evaluación</th>
+        <th class="tg-hd">Ponderación (%)</th>
+        <th class="tg-hd">Semana</th>
+        <th class="tg-hd">Herramienta de actividad</th>
+        <th class="tg-hd">Modalidad</th>
+        <th class="tg-hd">Observaciones</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td class="tg-cn">Elemento de Evaluación (E.E)</td>
+          <td class="tg-cn">XX%</td>
+          <td class="tg-cn">XX</td>
+          <td class="tg-cn">Tarea / Foro / Evaluación</td>
+          <td class="tg-cn">Flexible / Individual</td>
+          <td class="tg-cn">Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <td class="tg-cn">Elemento de Evaluación (E.E)</td>
+          <td class="tg-cn">XX%</td>
+          <td class="tg-cn">XX</td>
+          <td class="tg-cn">Tarea / Foro / Evaluación</td>
+          <td class="tg-cn">Flexible / Individual</td>
+          <td class="tg-cn">Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <td class="tg-cn">Elemento de Evaluación (E.E)</td>
+          <td class="tg-cn">XX%</td>
+          <td class="tg-cn">XX</td>
+          <td class="tg-cn">Tarea / Foro / Evaluación</td>
+          <td class="tg-cn">Flexible / Individual</td>
+          <td class="tg-cn">Lorem ipsum dolor sit amet.</td>
+        </tr>
+        <tr>
+          <td class="tg-bt">Total</td>
+          <td class="tg-bt">100%</td>
+          <td class="tg-no" style="border:none;"colspan="4"></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
     <article style="background-color:var(--background-02);border-radius:8px;padding:16px;">
         <figure class="image">
             <img src="https://utp-prd-upload-file-storage.s3.amazonaws.com/pao/content/86ab85a4-2526-411a-b7a7-9f75e47a3e2b/Frame%201954_YSXMUZ.png" alt="" width="32" height="32">
@@ -89,14 +167,6 @@ h1,h2,h3,h4,h5,h6{
             <li> Si la alumna tiene <strong>visión reducida</strong> y la evaluación requiere analizar una imagen, se le podría ofrecer un recurso auditivo para analizar, o se le puede enviar una descripción objetiva de la imagen. </li>
         </ul>
     </article>
-  <!-- <div class="grid-row grid gap-md col4">
-        <article class="col-span-3">
-            <p> Revisa la <strong>guía para generar evaluaciones accesibles </strong>para aprender más. También, conversa con tu coordinador si surge algún caso similar. </p>
-        </article>
-        <article class="col-span-1">
-            <p> <button class="button button--md sc-cc-button" style="background-color:var(--secondary);font-size:16px;margin-bottom:8px;" href="#">Abrir Guía de Evaluaciones</button> </p>
-        </article>
-    </div> -->
 </section>
 <hr>
 <section>
@@ -159,7 +229,7 @@ h1,h2,h3,h4,h5,h6{
         5. Recomendaciones para la modalidad virtual
     </h2>
     <ul>
-        <li> En los cursos virtuales, los recursos base para las evaluaciones se encuentran en una carpeta de <a href="#" target="_blank">OneDrive</a>. Úsalas como base para el material que diseñes para esas sesiones. </li>
+        <li> En los cursos virtuales, los recursos para las evaluaciones – como consignas, instrumentos de evaluación, entre otros – se encuentran adjuntos en la sección 2 (<a href="#parte-2">“El sistema de evaluación”</a>) de esta página. Úsalos como base para el material que diseñes para esas sesiones.</li>
         <li> En tu curso 24/7, encontrarás una sección donde puedes agregar material, sean presentaciones, formatos, material complementario, etc. En caso decidas no utilizarla, por favor <strong>elimina esa sección</strong> de tu semana. </li>
     </ul>
 </section>
